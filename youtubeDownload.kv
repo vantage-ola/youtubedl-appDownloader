@@ -1,0 +1,26 @@
+AddDownloadForm: 
+
+<AddDownloadForm>: 
+    orientation: "horizontal"
+    video_link: search_box
+
+    BoxLayout:
+        height: "35dp"
+        size_hint: .1, .1
+        pos_hint: {'center_x':.7, 'center_y': .7}
+        TextInput:
+            id: search_box
+            size_hint_x: 75
+            size_hint_y: .8
+            multiline: False
+            hint_text: "Paste Youtube Video Link"
+        Button:
+            text: "check"
+            size_hint_x: 25
+            size_hint_y: .8
+            on_press: root.checkVideoLink()            
+        Button:
+            text: "Download"
+            size_hint_x: 25
+            size_hint_y: .8
+            on_press: root.start_download()            
