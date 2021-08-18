@@ -40,7 +40,7 @@ def videoQuality():
 def videoOptionDict():
     """ Video Download Options based on videoQuality() """
     ydl_opts = {
-        'format': 'bestvideo/best',
+        'format': 'best',
         'ignoreerrors': False
     }
     return ydl_opts
