@@ -41,8 +41,8 @@ def videoOptionDict():
     """ Video Download Options based on videoQuality() """
     ydl_opts = {
         'format': 'best',
-        'ignoreerrors': False,
-        'outtmpl':'/Downloads/%(title)s.%(ext)s'
+        'ignoreerrors': False
+#        'outtmpl':'/Downloads/%(title)s.%(ext)s'
     }
     return ydl_opts
 
